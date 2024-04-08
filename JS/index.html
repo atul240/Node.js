@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./promise.js">
+    <script src="./promise.js"></script>
+</head>
+<body>
+    <script>
+        var button = document.createElement("button");
+
+        button.innerText = 'Click me';
+        button.style.backgroundColor="magenta";
+        button.style.color="white";
+        button.id = "btn";
+        document.body.insertBefore(button, document.body.firstChild);
+        button.style.border = "none";
+        button.style.width = "20%";
+        // button.style.opacity =;
+
+        let count = 0;
+        button.onchange = () =>{console.log("Button clicks by ",count+=1," times.");} 
+    </script>
+</body>
+</html>
