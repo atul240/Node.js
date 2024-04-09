@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Home Page</h1>
+    <% console.log(info.length) %>
+    <% info.forEach(person =>{ %>
+    <table>
+        <tr>
+            <th>Information</th>
+            <th>User Data</th>
+        </tr>
+        <tr>
+            <td>First Name : </td>
+            <%# if(person.fname == 'Atul') {%>
+            <td><%= person.fname %></td>
+            <%#} else { %>
+            <%#<td>Kapil</td> %>
+            <%# desg = 'Civil Engineer' %>
+            <%#}%>
+        </tr>
+        <tr>
+            <td>Last Name : </td>
+            <td><%= person.lname %></td>
+        </tr>
+        <tr>
+            <td>Designation : </td>
+            <td><%= person.desg %></td>
+        </tr>
+    </table>
+    <% }) %>
+</body>
+
+</html>
