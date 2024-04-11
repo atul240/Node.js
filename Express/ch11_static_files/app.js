@@ -7,6 +7,7 @@ import web from './routes/web.js'
 
 // static files
 app.use(express.static(join(process.cwd(),'public')))
+// app.use(express.static('public'));
 // app.use(express.static(join(__dirname, 'public')));
 
 
