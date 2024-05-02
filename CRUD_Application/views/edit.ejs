@@ -1,0 +1,27 @@
+<%- include('./partials/header.ejs') %>
+<!-- <h1>Hello world</h1> -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mt-5">
+            <h2 class="alert alert-success text-center">Update Student</h2>
+            <form method="post" action="/student/update/<%= data._id %>">
+                <div class="mb3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" value="<%= data.name %>">
+                </div>
+                <div class="mb3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="text" name="age" id="age" class="form-control" value="<%= data.age %>">
+                </div>
+                <div class="mb3">
+                    <label for="fees" class="form-label">Fees</label>
+                    <input type="text" name="fees" id="fees" class="form-control" value="<%= data.fees %>">
+                </div>
+                <button type="submit" class="btn btn-warning mt-4">Update</button>
+                <button type="submit" class="btn btn-secondary mt-4">Back to Home</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+<%- include('./partials/footer.ejs') %>
