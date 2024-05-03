@@ -61,7 +61,7 @@ class StudentController {
         // console.log(req.body);
         try {
             const result = await StudentModel.findByIdAndUpdate(req.params.id, req.body)
-            console.log(result);
+            // console.log(result);
         } catch (error) {
             console.log(error);
         }
